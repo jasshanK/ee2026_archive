@@ -1,0 +1,382 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Mar 14 20:42:20 2021
+# Process ID: 17148
+# Current directory: C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.runs/synth_1
+# Command line: vivado.exe -log fingerprint_scan.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fingerprint_scan.tcl
+# Log file: C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.runs/synth_1/fingerprint_scan.vds
+# Journal file: C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fingerprint_scan.tcl -notrace
+Command: synth_design -top fingerprint_scan -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18080 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.059 ; gain = 99.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fingerprint_scan' [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:23]
+INFO: [Synth 8-6157] synthesizing module 'modular_clock' [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/modular_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'modular_clock' (1#1) [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/modular_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'single_output' [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/single_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (2#1) [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_output' (3#1) [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/single_output.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:145]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:169]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:344]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:360]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:379]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:398]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:341]
+WARNING: [Synth 8-6014] Unused sequential element l_clock_reg was removed.  [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:325]
+WARNING: [Synth 8-6014] Unused sequential element r_clock_reg was removed.  [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:326]
+WARNING: [Synth 8-6014] Unused sequential element c_clock_reg was removed.  [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:327]
+INFO: [Synth 8-6155] done synthesizing module 'fingerprint_scan' (4#1) [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/sources_1/new/fingerprint_scan.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.227 ; gain = 154.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.227 ; gain = 154.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.227 ; gain = 154.465
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fingerprint_scan_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fingerprint_scan_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 747.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 747.086 ; gain = 490.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 747.086 ; gain = 490.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 747.086 ; gain = 490.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "AN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "safe_check" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "breach_check" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 747.086 ; gain = 490.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 5     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 7     
+	   2 Input      4 Bit       Adders := 4     
+	   5 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 19    
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 17    
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 69    
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fingerprint_scan 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 7     
+	   2 Input      4 Bit       Adders := 4     
+	   5 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 19    
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 17    
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 69    
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+Module modular_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "breach_check" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "breach_check" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 747.086 ; gain = 490.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 747.086 ; gain = 490.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 758.707 ; gain = 501.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (b_anode_count_reg[2]) is unused and will be removed from module fingerprint_scan.
+WARNING: [Synth 8-3332] Sequential element (count_r_reg[2]) is unused and will be removed from module fingerprint_scan.
+WARNING: [Synth 8-3332] Sequential element (count_l_reg[2]) is unused and will be removed from module fingerprint_scan.
+WARNING: [Synth 8-3332] Sequential element (count_c_reg[2]) is unused and will be removed from module fingerprint_scan.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    78|
+|3     |LUT1   |    11|
+|4     |LUT2   |    34|
+|5     |LUT3   |    66|
+|6     |LUT4   |    33|
+|7     |LUT5   |    27|
+|8     |LUT6   |   143|
+|9     |FDRE   |   254|
+|10    |IBUF   |     9|
+|11    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+----------------+------+
+|      |Instance     |Module          |Cells |
++------+-------------+----------------+------+
+|1     |top          |                |   685|
+|2     |  buttonC    |single_output   |     4|
+|3     |    dff1     |dff_11          |     2|
+|4     |    dff2     |dff_12          |     2|
+|5     |  buttonL    |single_output_0 |     6|
+|6     |    dff1     |dff_9           |     2|
+|7     |    dff2     |dff_10          |     4|
+|8     |  buttonR    |single_output_1 |     7|
+|9     |    dff1     |dff_7           |     2|
+|10    |    dff2     |dff_8           |     5|
+|11    |  buttonU    |single_output_2 |   208|
+|12    |    dff1     |dff             |    68|
+|13    |    dff2     |dff_6           |   140|
+|14    |  five_95HZ  |modular_clock   |    56|
+|15    |  four00HZ   |modular_clock_3 |    56|
+|16    |  three81HZ  |modular_clock_4 |    57|
+|17    |  zero_745HZ |modular_clock_5 |    56|
++------+-------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 772.531 ; gain = 179.910
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 772.531 ; gain = 515.770
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 772.531 ; gain = 528.594
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jassh/vivado_proj/project_assignment4/project_assignment4.runs/synth_1/fingerprint_scan.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fingerprint_scan_utilization_synth.rpt -pb fingerprint_scan_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 772.531 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 14 20:42:52 2021...

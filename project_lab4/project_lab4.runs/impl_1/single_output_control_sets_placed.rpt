@@ -1,0 +1,70 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Mar  9 01:21:25 2021
+| Host         : LAPTOP-BMHAFMI5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file single_output_control_sets_placed.rpt
+| Design       : single_output
+| Device       : xc7a35t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     4 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              62 |            8 |
+| Yes          | No                    | No                     |              32 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------+------------------+------------------+----------------+
+|    Clock Signal    | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------+---------------+------------------+------------------+----------------+
+|  CLOCK_IBUF_BUFG   |               |                  |                1 |              2 |
+|  three_hz/set_freq |               |                  |                2 |              4 |
+|  three_hz/set_freq | dff1/F        |                  |                4 |             32 |
+|  CLOCK_IBUF_BUFG   |               | three_hz/clear   |                8 |             62 |
++--------------------+---------------+------------------+------------------+----------------+
+
+

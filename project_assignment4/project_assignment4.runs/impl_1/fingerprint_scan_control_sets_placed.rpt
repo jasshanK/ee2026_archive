@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Mar 14 20:43:29 2021
+| Host         : LAPTOP-BMHAFMI5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fingerprint_scan_control_sets_placed.rpt
+| Design       : fingerprint_scan
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            2 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              70 |           20 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             248 |           32 |
+| Yes          | No                    | No                     |             158 |           32 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------------+--------------------------------+------------------+----------------+
+|   Clock Signal   |    Enable Signal    |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++------------------+---------------------+--------------------------------+------------------+----------------+
+|  five_95HZ/CLK   |                     |                                |                1 |              2 |
+|  CLOCK_IBUF_BUFG |                     |                                |                3 |              8 |
+|  clk_BUFG        | AN[3]_i_1_n_0       |                                |                2 |              8 |
+|  clk_BUFG        | buttonU/dff2/E[0]   |                                |                5 |             16 |
+|  four00HZ/Q_reg  |                     |                                |                6 |             16 |
+|  clk_BUFG        | p_42_in             |                                |                3 |             20 |
+|  five_95HZ/CLK   | LED[15]_i_2_n_0     | LED0                           |                7 |             32 |
+|  clk_BUFG        |                     |                                |               10 |             44 |
+|  CLOCK_IBUF_BUFG |                     | five_95HZ/clear                |                8 |             62 |
+|  CLOCK_IBUF_BUFG |                     | four00HZ/COUNT[0]_i_1_n_0      |                8 |             62 |
+|  CLOCK_IBUF_BUFG |                     | three81HZ/COUNT[0]_i_1__2_n_0  |                8 |             62 |
+|  CLOCK_IBUF_BUFG |                     | zero_745HZ/COUNT[0]_i_1__1_n_0 |                8 |             62 |
+|  clk_BUFG        | sub_b_check_i_1_n_0 |                                |               22 |            114 |
++------------------+---------------------+--------------------------------+------------------+----------------+
+
+

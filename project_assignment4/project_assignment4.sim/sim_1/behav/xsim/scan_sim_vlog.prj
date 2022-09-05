@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_assignment4.srcs/sources_1/new/fingerprint_scan.v" \
+"../../../../project_assignment4.srcs/sources_1/new/modular_clock.v" \
+"../../../../project_assignment4.srcs/sim_1/new/scan_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

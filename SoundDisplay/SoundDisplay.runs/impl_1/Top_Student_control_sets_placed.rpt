@@ -1,0 +1,115 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  3 11:51:58 2021
+| Host         : LAPTOP-BMHAFMI5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    45 |
+| Unused register locations in slices containing registers |   128 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      4 |            1 |
+|      6 |            1 |
+|      8 |            1 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |           36 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             188 |           63 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1042 |          140 |
+| Yes          | No                    | No                     |             136 |           33 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             362 |           53 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|      Clock Signal      |           Enable Signal           |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|  clk6p25m_BUFG         |                                   |                                       |                1 |              2 |
+|  clk20k                |                                   |                                       |                1 |              2 |
+|  feature01_out         |                                   | feature0                              |                1 |              2 |
+| ~clk6p25m_BUFG         |                                   |                                       |                1 |              2 |
+|  three_81Hz/clk381     |                                   |                                       |                1 |              4 |
+|  feature_BUFG[0]       |                                   |                                       |                3 |              6 |
+|  vol/c10/CLK           | sw_IBUF[2]                        |                                       |                2 |              8 |
+|  four_00Hz/Q_reg       |                                   |                                       |                5 |             12 |
+|  clk6p25m_BUFG         | feature_BUFG[0]                   |                                       |                7 |             14 |
+|  clk6p25m_BUFG         | ryu/f_counter                     | ryu/f_counter[8]_i_1_n_0              |                4 |             18 |
+|  three_81Hz/clk381     | feature_BUFG[0]                   |                                       |                4 |             20 |
+|  twenty_kHz/CLK        |                                   |                                       |                5 |             24 |
+| ~mic/J_MIC3_Pin4_OBUF  |                                   |                                       |                5 |             24 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | twenty_kHz/CLK                        |                3 |             24 |
+|  clk20k                |                                   | vol/temp                              |                7 |             24 |
+|  oled/E[0]             |                                   |                                       |               11 |             26 |
+|  vol/c10/CLK           |                                   |                                       |                5 |             26 |
+|  vol/three_81Hz/clk381 | vol/oled_data_reg[15]_i_2_n_0     |                                       |                4 |             28 |
+|  CLK100MHZ_IBUF_BUFG   |                                   |                                       |               12 |             28 |
+|  clk20k                | vol/led[15]_i_1_n_0               |                                       |                7 |             32 |
+| ~feature_BUFG[0]       |                                   |                                       |               13 |             32 |
+|  clk20k                | vol/temp                          |                                       |                9 |             34 |
+| ~clk6p25m_BUFG         |                                   | dbs1/dff1/F                           |                4 |             34 |
+| ~clk6p25m_BUFG         | oled/delay[0]_i_1_n_0             | dbs1/dff1/F                           |                5 |             40 |
+|  clk6p25m_BUFG         | feature_BUFG[0]                   | ryu/base_count[22]_i_1_n_0            |                7 |             46 |
+|  clk6p25m_BUFG         | feature_BUFG[0]                   | ryu/count_frame                       |                4 |             46 |
+|  clk6p25m_BUFG         | feature_BUFG[0]                   | ryu/shot_frame[23]_i_1_n_0            |                6 |             48 |
+|  clk6p25m_BUFG         | mic/hk_trigger9_out               | ryu/charge[24]_i_1_n_0                |                7 |             50 |
+|  clk6p25m_BUFG         | feature_BUFG[0]                   | ryu/tired[24]_i_1_n_0                 |               11 |             50 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/c9/clear                          |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/c6/clear                          |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/c7/clear                          |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | four_00Hz/COUNT[0]_i_1__1_n_0         |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/c5/clear                          |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | six_25MHz/clear                       |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | twenty_kHz/COUNT[0]_i_1__0_n_0        |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | three_81Hz/COUNT[0]_i_1__2_n_0        |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/c10/clear                         |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/twenty_kHz/clear                  |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/c8/clear                          |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/three_81Hz/clear                  |                8 |             62 |
+|  CLK100MHZ_IBUF_BUFG   |                                   | vol/c4/clear                          |                8 |             62 |
+|  clk20k                |                                   | vol/vol_count_reg[31]_0               |                8 |             62 |
+| ~clk6p25m_BUFG         | oled/FSM_onehot_state[31]_i_2_n_0 | dbs1/dff1/F                           |                9 |             64 |
+| ~clk6p25m_BUFG         |                                   | dbs1/dff2/spi_word_bit_count_reg[5]_0 |               13 |             90 |
++------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+
+

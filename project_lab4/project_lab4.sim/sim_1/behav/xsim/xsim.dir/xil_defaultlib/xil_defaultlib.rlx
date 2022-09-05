@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.srcs/sim_1/new/sim_single_output.v,1614667839,verilog,,,,sim_single_output,,,,,,,,
+C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.srcs/sources_1/new/clock_module.v,1614668725,verilog,,C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.srcs/sources_1/new/dff.v,,modular_clock,,,,,,,,
+C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.srcs/sources_1/new/dff.v,1614666003,verilog,,C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.srcs/sources_1/new/single_output.v,,dff,,,,,,,,
+C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.srcs/sources_1/new/single_output.v,1615698419,verilog,,C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.srcs/sim_1/new/sim_single_output.v,,single_output,,,,,,,,

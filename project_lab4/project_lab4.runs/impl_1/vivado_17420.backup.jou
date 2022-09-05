@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar  9 01:07:17 2021
+# Process ID: 17420
+# Current directory: C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.runs/impl_1
+# Command line: vivado.exe -log single_output.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source single_output.tcl -notrace
+# Log file: C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.runs/impl_1/single_output.vdi
+# Journal file: C:/Users/Jassh/vivado_proj/project_lab4/project_lab4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source single_output.tcl -notrace
